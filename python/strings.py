@@ -68,7 +68,7 @@ def fix_start(s):
     """
     firstletter = s[0]
 
-    for letter in s[1:len(s)]:
+    for letter in s:
         if letter == firstletter:
             s_prime = s.replace(letter, '*')     
 
@@ -108,7 +108,13 @@ def verbing(s):
     >>> verbing('do')
     'do'
     """
-    raise NotImplementedError
+    if len(s)>=3 and s[-1]!='g':
+        s = s + 'ing'
+    elif s[-1]=='g' and s[-2]=='n' and s[-3]=='i':
+        s = s + 'ly'
+    else: 
+        s = s    
+    print s
 
 
 def not_bad(s):

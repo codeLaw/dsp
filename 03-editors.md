@@ -31,7 +31,7 @@ Both Emacs and vim have built-in interactive tutorials that you can try.
 
 What terminal editor will you use? How did you make your decision?
 
-REPLACE THIS TEXT WITH YOUR RESPONSE
+Because I've used VIM for many years, I will continue to do so.
 
 ---
 
@@ -61,6 +61,6 @@ We will also use Jupyter (IPython) notebooks, but this does not remove the need 
 
 What graphical editor will you use? How did you make your decision? What are some interesting features of your editor? What are some useful keyboard shortcuts for your editor? How do you customize your editor?
 
-REPLACE THIS TEXT WITH YOUR RESPONSE
+I actually like using Enthought Canopy.  I've done data analysis primarily in Matlab in recent years, and in using Python in the past few months, found that the Enthought Canopy provided a somewhat similar environment.  Probably the most useful keyboard shortcut is command-R which runs the Python code.  I also has optional debugging features, similar to Matlab, and associated keyboard shortcuts.
 
 ---

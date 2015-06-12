@@ -24,7 +24,7 @@ def donuts(count):
     else:
         return "Number of donuts: many"
     
-
+    #raise NotImplementedError
 
 def both_ends(s):
     """
@@ -49,7 +49,8 @@ def both_ends(s):
         s = "''"
     return s
 
-
+    #raise NotImplementedError
+    
 def fix_start(s):
     """
     Given a string s, return a string where all occurences of its
@@ -74,7 +75,8 @@ def fix_start(s):
 
     s = s[0] + s_prime[1:len(s_prime)]          
     return s
-
+    
+    #raise NotImplementedError
 
 def mix_up(a, b):
     """
@@ -94,7 +96,7 @@ def mix_up(a, b):
     string = b[0]+a[1:len(a)] + " " + a[0]+b[1:len(b)]
     return string
 
-
+    #raise NotImplementedError
 
 def verbing(s):
     """
@@ -117,7 +119,8 @@ def verbing(s):
     else: 
         s = s    
     return s
-
+    
+    #raise NotImplementedError
 
 def not_bad(s):
     """
@@ -142,7 +145,8 @@ def not_bad(s):
         remove = s[begin:end]
         s = s.replace(remove, 'good')
     return s
-
+    
+    #raise NotImplementedError
 
 def front_back(a, b):
     """
@@ -164,3 +168,4 @@ def front_back(a, b):
     stringa, stringb = (len(a) + 1)/2, (len(b) + 1)/2
     return a[:stringa] + b[:stringb] + a[stringa:] + b[stringb:]
     
+    #raise NotImplementedError

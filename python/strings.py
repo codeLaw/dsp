@@ -1,14 +1,12 @@
 # Based on materials copyright 2010 Google Inc.
 # Licensed under the Apache License, Version 2.0
 
-
 def donuts(count):
     """
     Given an int count of a number of donuts, return a string of the
     form 'Number of donuts: <count>', where <count> is the number
     passed in. However, if the count is 10 or more, then use the word
     'many' instead of the actual count.
-
     >>> donuts(4)
     'Number of donuts: 4'
     >>> donuts(9)
@@ -18,14 +16,11 @@ def donuts(count):
     >>> donuts(99)
     'Number of donuts: many'
     """
-    
     if count < 10:
         return "Number of donuts: %s"  % count
     else:
         return "Number of donuts: many"
     
-    #raise NotImplementedError
-
 def both_ends(s):
     """
     Given a string s, return a string made of the first 2 and the last
@@ -42,15 +37,12 @@ def both_ends(s):
     >>> both_ends('xyz')
     'xyyz'
     """
-    
     if len(s) > 2:
         s = s[0:2] + s[len(s)-2] + s[len(s)-1]       
     else:
-        s = "''"
+        s = ''
     return s
-
-    #raise NotImplementedError
-    
+        
 def fix_start(s):
     """
     Given a string s, return a string where all occurences of its
@@ -76,14 +68,11 @@ def fix_start(s):
     s = s[0] + s_prime[1:len(s_prime)]          
     return s
     
-    #raise NotImplementedError
-
 def mix_up(a, b):
     """
     Given strings a and b, return a single string with a and b
     separated by a space '<a> <b>', except swap the first 2 chars of
     each string. Assume a and b are length 2 or more.
-
     >>> mix_up('mix', 'pod')
     'pox mid'
     >>> mix_up('dog', 'dinner')
@@ -93,10 +82,8 @@ def mix_up(a, b):
     >>> mix_up('pezzy', 'firm')
     'fizzy perm'
     """
-    string = b[0]+a[1:len(a)] + " " + a[0]+b[1:len(b)]
+    string = b[:2]+a[2:len(a)] + " " + a[:2]+b[2:len(b)]
     return string
-
-    #raise NotImplementedError
 
 def verbing(s):
     """
@@ -104,14 +91,13 @@ def verbing(s):
     Unless it already ends in 'ing', in which case add 'ly' instead.
     If the string length is less than 3, leave it unchanged. Return
     the resulting string.
-
     >>> verbing('hail')
     'hailing'
     >>> verbing('swiming')
     'swimingly'
     >>> verbing('do')
     'do'
-    """
+    """    
     if len(s)>=3 and s[-1]!='g':
         s = s + 'ing'
     elif s.endswith('ing'):
@@ -120,8 +106,6 @@ def verbing(s):
         s = s    
     return s
     
-    #raise NotImplementedError
-
 def not_bad(s):
     """
     Given a string, find the first appearance of the substring 'not'
@@ -145,9 +129,7 @@ def not_bad(s):
         remove = s[begin:end]
         s = s.replace(remove, 'good')
     return s
-    
-    #raise NotImplementedError
-
+        
 def front_back(a, b):
     """
     Consider dividing a string into two halves. If the length is even,
@@ -156,7 +138,6 @@ def front_back(a, b):
     'abcde', the front half is 'abc', the back half 'de'. Given 2
     strings, a and b, return a string of the form a-front + b-front +
     a-back + b-back
-
     >>> front_back('abcd', 'xy')
     'abxcdy'
     >>> front_back('abcde', 'xyz')
@@ -164,8 +145,9 @@ def front_back(a, b):
     >>> front_back('Kitten', 'Donut')
     'KitDontenut'
     """
-    
     stringa, stringb = (len(a) + 1)/2, (len(b) + 1)/2
     return a[:stringa] + b[:stringb] + a[stringa:] + b[stringb:]
     
-    #raise NotImplementedError
+if __name__ == "__main__":
+    import doctest
+    doctest.testmod()    

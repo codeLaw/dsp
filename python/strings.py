@@ -20,9 +20,9 @@ def donuts(count):
     """
     
     if count < 10:
-        print "Number of donuts: %s"  % count
+        return "Number of donuts: %s"  % count
     else:
-        print "Number of donuts: many"
+        return "Number of donuts: many"
     
 
 
@@ -47,7 +47,7 @@ def both_ends(s):
         s = s[0:2] + s[len(s)-2] + s[len(s)-1]       
     else:
         s = "''"
-    print s
+    return s
 
 
 def fix_start(s):
@@ -73,7 +73,7 @@ def fix_start(s):
             s_prime = s.replace(letter, '*')     
 
     s = s[0] + s_prime[1:len(s_prime)]          
-    print s
+    return s
 
 
 def mix_up(a, b):
@@ -92,7 +92,7 @@ def mix_up(a, b):
     'fizzy perm'
     """
     string = b[0]+a[1:len(a)] + " " + a[0]+b[1:len(b)]
-    print string
+    return string
 
 
 

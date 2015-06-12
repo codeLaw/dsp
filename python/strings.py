@@ -91,7 +91,9 @@ def mix_up(a, b):
     >>> mix_up('pezzy', 'firm')
     'fizzy perm'
     """
-    raise NotImplementedError
+    string = b[0]+a[1:len(a)] + " " + a[0]+b[1:len(b)]
+    print string
+
 
 
 def verbing(s):
@@ -110,7 +112,7 @@ def verbing(s):
     """
     if len(s)>=3 and s[-1]!='g':
         s = s + 'ing'
-    elif s[-1]=='g' and s[-2]=='n' and s[-3]=='i':
+    elif s.endswith('ing'):
         s = s + 'ly'
     else: 
         s = s    
@@ -134,7 +136,12 @@ def not_bad(s):
     >>> not_bad("It's bad yet not")
     "It's bad yet not"
     """
-    raise NotImplementedError
+    if 'not' in s and 'bad' in s and s.find('not')<s.find('bad'):   
+        begin = s.find('not')
+        end = s.find('bad') + len('bad')
+        remove = s[begin:end]
+        s = s.replace(remove, 'good')
+    return s
 
 
 def front_back(a, b):

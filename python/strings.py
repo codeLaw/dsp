@@ -116,7 +116,7 @@ def verbing(s):
         s = s + 'ly'
     else: 
         s = s    
-    print s
+    return s
 
 
 def not_bad(s):
@@ -160,4 +160,7 @@ def front_back(a, b):
     >>> front_back('Kitten', 'Donut')
     'KitDontenut'
     """
-    raise NotImplementedError
+    
+    stringa, stringb = (len(a) + 1)/2, (len(b) + 1)/2
+    return a[:stringa] + b[:stringb] + a[stringa:] + b[stringb:]
+    

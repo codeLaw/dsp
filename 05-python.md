@@ -57,7 +57,7 @@ Describe Python's `lambda`. What is it, and what is it used for? Give at least o
 >tuples =  [(1, 7), (1, 3), (3, 4, 5), (2, 2)]
 
 >tuples = sorted(tuples, key=lambda item: item[len(item)-1])
->Out[3]: [(2, 2), (1, 3), (3, 4, 5), (1, 7)]
+>>Out[3]: [(2, 2), (1, 3), (3, 4, 5), (1, 7)]
 
 
 ---

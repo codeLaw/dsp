@@ -50,7 +50,15 @@ How are Python lists and sets similar and different? Give examples of using both
 
 Describe Python's `lambda`. What is it, and what is it used for? Give at least one example, including an example of using a `lambda` in the `key` argument to `sorted`.
 
-REPLACE THIS TEXT WITH YOUR RESPONSE
+>The lambda operator or lambda function is a way to create small anonymous “throw-away” functions (i.e., functions without a name that are used only once). 
+
+An example:
+
+tuples =  [(1, 7), (1, 3), (3, 4, 5), (2, 2)]
+
+tuples = sorted(tuples, key=lambda item: item[len(item)-1])
+ >Out[3]: [(2, 2), (1, 3), (3, 4, 5), (1, 7)]
+
 
 ---
 

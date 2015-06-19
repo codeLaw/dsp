@@ -67,7 +67,53 @@ Describe Python's `lambda`. What is it, and what is it used for? Give at least o
 
 Explain list comprehensions. Give examples and show equivalents with `map` and `filter`. How do their capabilities compare? Also demonstrate set comprehensions and dictionary comprehensions.
 
-REPLACE THIS TEXT WITH YOUR RESPONSE
+>The lambda operator or lambda function is a way to create small anonymous “throw-away” functions (i.e., functions without a name that are used only once). 
+
+An example:
+
+tuples =  [(1, 7), (1, 3), (3, 4, 5), (2, 2)]
+
+tuples = sorted(tuples, key=lambda item: item[len(item)-1])
+ >Out[3]: [(2, 2), (1, 3), (3, 4, 5), (1, 7)]
+
+
+
+
+Explain list comprehensions. Give examples and show equivalents with map and filter. How do their capabilities compare? Also demonstrate set comprehensions and dictionary comprehensions.
+
+>List comprehensions are used to create a series (any combination of list, set, tuple).  As its name suggests, filter( ) filters the elements of a list (i.e., removes items which the function determines are False) and returns a list of “True” items.  In contrast, map( ) applies a function to each element in a list and returns that list of “applied” elements. 
+
+>List
+>numbers = [x*10 for x in range(5)]
+>numbers
+>>Out[4]: [0, 10, 20, 30, 40]
+
+>Map
+>map(lambda x: x*10, range(5))
+>>Out[5]: [0, 10, 20, 30, 40]
+
+>Or, without lambda:
+
+>def timesten(x):
+>    x = x*10
+>    return x
+
+>map(timesten, range(5))
+>>Out[6]: [0, 10, 20, 30, 40]
+
+>Filter
+>numbers = [i for i in range(5) if i % 2 == 0]
+>numbers
+>>Out[7]: [0, 2, 4]
+
+>Set Comprehension
+>s = { x for x in range(5) }
+>>Out[8]: {0, 1, 2, 3, 4}
+
+>Dictionary Comprehension
+>D = {k: 0 for k in ['a','b','c']}
+>D
+>>Out[9]: {'a': 0, 'c': 0, 'b': 0}
 
 ---
 

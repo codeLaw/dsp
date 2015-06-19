@@ -33,12 +33,12 @@ How are Python lists and sets similar and different? Give examples of using both
 >An example of a list:
 
 >a=[‘a’,’b’,’b’,’c’]
->Out[1]: ['a', 'b', 'b', 'c']
+>>Out[1]: ['a', 'b', 'b', 'c']
 
 >An example of a set:
 
 >set(['a','b','b','c'])
->Out[2]: {'a', 'b', 'c'}
+>>Out[2]: {'a', 'b', 'c'}
 
 >Because sets use hashtables while lists evaluate each individual item, it is generally faster to search a set than a list, especially for large sets/lists.
 

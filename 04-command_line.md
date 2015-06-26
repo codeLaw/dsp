@@ -12,8 +12,8 @@ these in a couple of hours.
 
 Make a cheat sheet for yourself: a list of commands and what they do, focused on things that are new, interesting, or otherwise worth remembering.
 
-REPLACE THIS TEXT WITH YOUR RESPONSE
-
+>pushd: Save current working directory and changes to another directory.
+>popd: Brings you back to saved directory.
 ---
 
 

@@ -21,7 +21,7 @@ REPLACE THIS TEXT WITH YOUR RESPONSE
 
 What does `ls` do? What do `ls -a`, `ls -l`, and `ls -lh` do? What combinations of those flags are meaningful?
 
-'ls' lists the contents of a given directory.  'ls -a' lists all of the contents of a given directory inalcuding those files that start with a '.'.  'ls -l' lists the contents in long format (including permissions, user, file size, data, time, file name)
+>'ls' lists the contents of a given directory.  'ls -a' lists all of the contents of a given directory inalcuding those files that start with a '.'.  'ls -l' lists the contents in long format (including permissions, user, file size, data, time, file name)
 
 ---
 
@@ -30,10 +30,10 @@ What does `ls` do? What do `ls -a`, `ls -l`, and `ls -lh` do? What combinations 
 
 What does `xargs` do? Give an example of how to use it.
 
-'xargs' is often used with 'find' and 'grep' to obtain file information from standard input.  For example:
+>'xargs' is often used with 'find' and 'grep' to obtain file information from standard input.  For example:
 
-find . -name "*.py" | xargs grep "Pandas"
+>find . -name "*.py" | xargs grep "Pandas"
 
-This command searches for all files with the '.py' extension and then searches these files for the keyword "Pandas."
+>This command searches for all files with the '.py' extension and then searches these files for the keyword "Pandas."
 
 ---

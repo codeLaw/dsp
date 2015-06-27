@@ -12,8 +12,8 @@ these in a couple of hours.
 
 Make a cheat sheet for yourself: a list of commands and what they do, focused on things that are new, interesting, or otherwise worth remembering.
 
->pushd - Saves current working directory and changes to another directory.
->popd - Brings you back to saved directory.
+>pushd saves current directory path and changes to another directory, while popd brings you back to the saved directory path.
+
 ---
 
 

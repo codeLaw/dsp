@@ -4,8 +4,6 @@ I used the InterpolateSample function.
 
 ```
 import numpy as np
-
-import thinkplot
 import thinkstats2
 
 import hinc
@@ -47,8 +45,6 @@ df = hinc.ReadData()
 log_sample = InterpolateSample(df, log_upper=6.0) # set as 6.0 or 7.0
 
 log_cdf = thinkstats2.Cdf(log_sample)
-thinkplot.Cdf(log_cdf)
-thinkplot.Show(xlabel='income',ylabel='CDF')
 sample = np.power(10, log_sample)
 mean, median = density.Summarize(sample)
 
@@ -56,8 +52,6 @@ cdf = thinkstats2.Cdf(sample)
 print 'cdf mean:', cdf[mean]
 
 pdf = thinkstats2.EstimatedPdf(sample)
-thinkplot.Pdf(pdf)
-thinkplot.Show(xlabel='income',ylabel='PDF')
 ```
 
 Ouput:  log_upper = 6.0

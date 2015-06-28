@@ -3,7 +3,7 @@
 The mean of the actual pmf was 1.02, while the mean of the biased pmf was 2.40.  I used Pmf and BiasPmf (from the book) to obtain the distributions/means as well as thinkplot to plot the data.
 
 Code
-
+```
 import chap01soln
 response = chap01soln.ReadFemResp()
 
@@ -45,7 +45,10 @@ thinkplot.Show()
 
 print pmf.Mean()
 print biasedpmf.Mean() 
+```
 
 Ouput
+```
 1.02420515504
 2.40367910066
+```

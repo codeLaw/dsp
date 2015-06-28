@@ -3,7 +3,7 @@
 Because the CDF plot is essentially a straight line, we can conclude that the distribution is uniform.
 
 Code
-
+```
 import random
 import thinkstats2
 import thinkplot
@@ -19,3 +19,4 @@ thinkplot.Show()
 cdf = thinkstats2.Cdf(sample)
 thinkplot.Cdf(cdf, linewidth=1.0)
 thinkplot.Show()
+```

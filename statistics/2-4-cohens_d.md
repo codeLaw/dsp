@@ -37,10 +37,11 @@ print 'Cohens d:', round(d,3)
 ```
 
 Output
+```
 First Born Birth Weight: 7.201
 Non First Born Birth Weight: 7.326
 Cohens d: -0.089
-
+```
 
 
 

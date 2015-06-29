@@ -54,7 +54,7 @@ print 'cdf mean:', cdf[mean]
 pdf = thinkstats2.EstimatedPdf(sample)
 ```
 
-Ouput:  log_upper = 6.0
+Output:  log_upper = 6.0
 ```
 mean 74278.7075312
 std 93946.9299635
